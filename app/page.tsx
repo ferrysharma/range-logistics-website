@@ -12,7 +12,7 @@ import { company, services, carrierServices, maps, type ServiceId } from "@/lib/
 
 const serviceIcons = [Truck, Snowflake, PackageCheck, Zap, Repeat2, Layers3, Warehouse, Compass];
 const carrierIcons = [Truck, Route, Headphones, ClipboardCheck];
-const navLinks = [{ href: "#shippers", label: "Shippers" }, { href: "#carriers", label: "Carriers" }, { href: "/driver-application", label: "Drive with us" }, { href: "#about", label: "About us" }, { href: "#contact", label: "Contact" }];
+const navLinks = [{ href: "#shippers", label: "Shippers" }, { href: "#carriers", label: "Carriers" }, { href: "/careers", label: "Careers" }, { href: "#about", label: "About us" }, { href: "#contact", label: "Contact" }];
 
 
 export default function Home() {
@@ -215,7 +215,7 @@ export default function Home() {
               <span>California based</span>
             </div>
             <div className="careers-buttons">
-              <a className="light-button" href={company.applicationUrl}>Apply to drive <ArrowUpRight aria-hidden="true" />
+              <a className="light-button" href="/careers">See open positions <ArrowUpRight aria-hidden="true" />
 
               </a>
               <a href={company.phoneHref}>

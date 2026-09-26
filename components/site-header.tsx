@@ -11,12 +11,12 @@ export function SiteHeader({ onQuote, isHome = false }: { onQuote?: () => void; 
   const [menuOpen, setMenuOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState("");
   const home = isHome ? "" : "/";
-  const mobileLinks = [{ href: `${home}#shippers`, label: "For shippers" }, { href: `${home}#carriers`, label: "For carriers" }, { href: company.applicationUrl, label: "Driver application" }, { href: `${home}#about`, label: "About Range" }, { href: `${home}#contact`, label: "Contact & directions" }];
+  const mobileLinks = [{ href: `${home}#shippers`, label: "For shippers" }, { href: `${home}#carriers`, label: "For carriers" }, { href: "/careers", label: "Careers" }, { href: company.applicationUrl, label: "Driver application" }, { href: `${home}#about`, label: "About Range" }, { href: `${home}#contact`, label: "Contact" }];
 
   return <>
     <div id="top" className="utility-bar">
       <div className="container utility-inner">
-        <a href={maps.searchUrl} target="_blank" rel="noopener noreferrer">
+        <a href={maps.directionsUrl} target="_blank" rel="noopener noreferrer">
           <MapPin aria-hidden="true" /> Bloomington, California <span className="utility-coverage">· Nationwide transportation</span>
         </a>
         <a href={company.phoneHref}>
@@ -63,7 +63,7 @@ export function SiteHeader({ onQuote, isHome = false }: { onQuote?: () => void; 
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
-                <a href={company.applicationUrl} className="simple-nav-link">Drive with us</a>
+                <a href="/careers" className="simple-nav-link">Careers</a>
               </NavigationMenuLink>
             </NavigationMenuItem>
             <NavigationMenuItem>
