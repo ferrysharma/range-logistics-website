@@ -2677,20 +2677,6 @@ svg {
   display: block;
   font-size: .8125rem;
 }
-.career-email {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: #2154da;
-  font-size: .875rem;
-  font-weight: 750;
-  overflow-wrap: anywhere;
-}
-.career-role-note {
-  margin-top: 28px;
-  color: #56657b;
-  font-size: .875rem;
-}
 @media(max-width:1000px) {
   .career-role-card { grid-template-columns: 1fr; }
   .career-apply-panel { max-width: 550px; }

@@ -19,7 +19,7 @@ Versions are pinned by `package-lock.json`. This is a Sites Vinext project; it d
 | --- | --- |
 | `lib/company.ts` | Verified contact details, Google Maps URLs, service copy, and social profiles |
 | `app/page.tsx` | Homepage sections and service details |
-| `app/careers/page.tsx` | Current driver and sales openings with application links |
+| `app/careers/page.tsx` | Current driver openings and application link |
 | `components/site-header.tsx` | Shared shipper/carrier menus and mobile navigation |
 | `components/brand.tsx` | Refreshed logo and live-text wordmark |
 | `components/truck-animation.tsx` | Independent truck motion and pause control |
@@ -74,7 +74,7 @@ There is no public endpoint listing customer requests. The owner can review `quo
 
 All driver links now use `/driver-application` on this website. The four-step form covers contact details, CDL experience, work history, and a review screen. The user can edit earlier answers and receives a saved reference after successful submission. It is an initial recruiting application, not a complete driver qualification packet; qualification documents are handled by the company during follow-up. It does not collect Social Security numbers or document uploads.
 
-The `/careers` page lists three CDL Class A reefer driver openings and one Account Manager sales opening. Driver candidates use the existing on-site application; sales candidates email the company directly. The previous `/cdl-driver-bloomington-ca` URL redirects to the driver listing.
+The `/careers` page lists three CDL Class A reefer driver openings. Candidates use the existing on-site application. The previous `/cdl-driver-bloomington-ca` URL redirects to the driver listing.
 
 The `/carriers` form collects company/contact details, optional USDOT/MC numbers, equipment, available trucks, preferred lanes, and a partnership topic. `/carriers?interest=lanes` preselects a topic; `capacity`, `coordination`, and `onboarding` are also supported. Inquiries do not approve a carrier or assign a load.
 
